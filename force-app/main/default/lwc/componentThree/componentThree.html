@@ -13,6 +13,7 @@
       {msg.message}
     </li>
   </template>
+  <!--Button to call apex method and get records from SF-->
   <button name="getContact" onclick={getCon}>GetContact</button>
   <template for:each={contactData} for:item="contact">
     <li key={contact.Id}>

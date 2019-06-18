@@ -28,6 +28,9 @@ export default class ComponentThree extends LightningElement {
 
   }*/
   getCon() {
+    //call apex method and return promise object -> (resolve,reject) ->
+    // if resolved - then block will run
+    // if reject - catch block will run
     getContacts()
       .then(result => {
         this.contactData = result;
